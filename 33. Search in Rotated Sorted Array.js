@@ -13,7 +13,6 @@ var search = function(nums, target) {
       if (nums[mid] === target) {
         return mid;
       }
-      
       if (nums[left] <= nums[mid]) { // left half is sorted
         if (nums[left] <= target && target < nums[mid]) {
           right = mid - 1;
@@ -28,9 +27,6 @@ var search = function(nums, target) {
         }
       }
   
-    }
-    
-    return -1; // target not found
-    
+    } 
+    return -1; // target not found 
   };
-  
