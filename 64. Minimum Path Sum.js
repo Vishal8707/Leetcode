@@ -14,7 +14,6 @@ var minPathSum = function(grid) {
   var a = helper(grid, 0, 0, memo);
   return a;
 
-
 }
 const helper = (grid, i, j, memo) => {
  if (i < grid.length && j < grid[0].length) {
